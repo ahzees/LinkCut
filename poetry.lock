@@ -4,7 +4,7 @@
 name = "argcomplete"
 version = "2.0.0"
 description = "Bash tab completion for argparse"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -144,7 +144,7 @@ files = [
 name = "charset-normalizer"
 version = "2.1.1"
 description = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6.0"
 files = [
@@ -174,7 +174,7 @@ colorama = {version = "*", markers = "platform_system == \"Windows\""}
 name = "colorama"
 version = "0.4.6"
 description = "Cross-platform colored terminal text."
-category = "dev"
+category = "main"
 optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7"
 files = [
@@ -184,14 +184,14 @@ files = [
 
 [[package]]
 name = "commitizen"
-version = "2.41.0"
+version = "2.42.0"
 description = "Python commitizen client tool"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6.2,<4.0.0"
 files = [
-    {file = "commitizen-2.41.0-py3-none-any.whl", hash = "sha256:2044f6d1cf002f363280e0dcefc8b557095dc42530060bfe5ad917ea4d5c48a1"},
-    {file = "commitizen-2.41.0.tar.gz", hash = "sha256:5d50093fe546cc3b5217780a8cdfc5a9de6a27ce8aa7db6443e2e47dc2b10b6a"},
+    {file = "commitizen-2.42.0-py3-none-any.whl", hash = "sha256:3be082c1eecbf1a1fb4c390fbbd3fd26be39e0f105f30c9079fc0e789386d08d"},
+    {file = "commitizen-2.42.0.tar.gz", hash = "sha256:c4c944408f3d55ca22b1c136e22217c167123c54f46730eb27a1c6503d705c69"},
 ]
 
 [package.dependencies]
@@ -211,7 +211,7 @@ typing-extensions = ">=4.0.1,<5.0.0"
 name = "decli"
 version = "0.5.2"
 description = "Minimal, easy-to-use, declarative cli tool"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -345,7 +345,7 @@ requirements-deprecated-finder = ["pip-api", "pipreqs"]
 name = "jinja2"
 version = "3.1.2"
 description = "A very fast and expressive template engine."
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -363,7 +363,7 @@ i18n = ["Babel (>=2.7)"]
 name = "markupsafe"
 version = "2.1.2"
 description = "Safely add untrusted strings to HTML/XML markup."
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -497,7 +497,7 @@ setuptools = "*"
 name = "packaging"
 version = "23.0"
 description = "Core utilities for Python packages"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -572,7 +572,7 @@ virtualenv = ">=20.10.0"
 name = "prompt-toolkit"
 version = "3.0.36"
 description = "Library for building powerful interactive command lines in Python"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6.2"
 files = [
@@ -634,7 +634,7 @@ testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "pygments (>=2.
 name = "pyyaml"
 version = "6.0"
 description = "YAML parser and emitter for Python"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -684,7 +684,7 @@ files = [
 name = "questionary"
 version = "1.10.0"
 description = "Python library to build pretty command line user prompts ⭐️"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6,<4.0"
 files = [
@@ -731,7 +731,7 @@ files = [
 name = "termcolor"
 version = "2.2.0"
 description = "ANSI color formatting for output in terminal"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -758,7 +758,7 @@ files = [
 name = "tomlkit"
 version = "0.11.6"
 description = "Style preserving TOML library"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -770,7 +770,7 @@ files = [
 name = "typing-extensions"
 version = "4.4.0"
 description = "Backported and Experimental Type Hints for Python 3.7+"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -815,7 +815,7 @@ test = ["covdefaults (>=2.2.2)", "coverage (>=7.1)", "coverage-enable-subprocess
 name = "wcwidth"
 version = "0.2.6"
 description = "Measures the displayed width of unicode strings in a terminal"
-category = "dev"
+category = "main"
 optional = false
 python-versions = "*"
 files = [
@@ -826,4 +826,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8.10"
-content-hash = "7dcc2f9fdeb5e4cced3599a04e282302d74ad145833133fa1d906906f5e3f38e"
+content-hash = "7de9fd877eb067c43e9e02fd2b1ce69be3f83ef33d0ebf01806e5701674f7973"

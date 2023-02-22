@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "LinkCut"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["ahzees <matviy.stets@gmail.com>"]
 readme = "README.md"
@@ -10,6 +10,7 @@ python = "^3.8.10"
 psycopg2 = "^2.9.5"
 django = "^4.1.7"
 django-dotenv = "^1.4.2"
+commitizen = "^2.42.0"
 
 [tool.isort]
 profile = "black"
@@ -27,7 +28,7 @@ commitizen = "^2.41.0"
 
 [tool.commitizen]
 name = "cz_customize"
-version = "0.1.0"
+version = "0.1.1"
 tag_format = "v$version"
 update_changelog_on_bump = true
 version_files = [
