@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Вкоротити посилання</title>
+	<link rel="stylesheet" type="text/css" href={% static 'cuturl/css/style.css'%}>
+</head>
+<body>
+	<div class="container">
+		<h1>Вкоротити посилання</h1>
+		<form action="/" method="post">
+			{% csrf_token %}
+			<label for="long_url">Довге посилання:</label>
+			<input type="url" name="long_url" id="long_url" required>
+			<button type="submit">Вкоротити</button>
+		</form>
+        {% if short_url %}
+			<div class="short-url">
+				<label for="short-url">Коротке посилання:</label>
+				<input type="text" name="short_url" id="short-url" value="{{ short_url }}" readonly>
+			</div>
+		{% endif %}
+	</div>
+</body>
+</html>
