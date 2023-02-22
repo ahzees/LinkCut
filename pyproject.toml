@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "templateproject"
+name = "LinkCut"
 version = "0.1.0"
 description = ""
 authors = ["ahzees <matviy.stets@gmail.com>"]
@@ -7,13 +7,20 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.8.10"
+psycopg2 = "^2.9.5"
+django = "^4.1.7"
+django-dotenv = "^1.4.2"
 
+[tool.isort]
+profile = "black"
+
+[tool.flake8]
+profile = "black"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.1.0"
 pre-commit = "^3.0.4"
 mypy = "^1.0.0"
-flake8 = "^6.0.0"
 pytest = "^7.2.1"
 isort = "^5.12.0"
 commitizen = "^2.41.0"
@@ -24,7 +31,7 @@ version = "0.1.0"
 tag_format = "v$version"
 update_changelog_on_bump = true
 version_files = [
-    "templateproject/__init__.py:version",
+    "LinkCut/__init__.py:version",
     "pyproject.toml:^version"
 ]
 
