@@ -1,4 +1,7 @@
 .python-version
 .mypy_cache
-__pycache__
 migrations
+__pycache__
+/*/**/__pycache__
+docker-compose.yml
+.DS_STORE
