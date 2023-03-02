@@ -12,6 +12,8 @@ django = "^4.1.7"
 django-dotenv = "^1.4.2"
 commitizen = "^2.42.0"
 djangorestframework = "^3.14.0"
+django-rest-auth = "^0.9.5"
+django-allauth = "^0.52.0"
 
 [tool.isort]
 profile = "black"

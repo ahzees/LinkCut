@@ -1,12 +1,35 @@
 # from django.http.respo
 # Create your views here
+import json
 import random
 
 from django.core.exceptions import ObjectDoesNotExist
-from django.http import Http404
 from django.shortcuts import redirect, render
+from rest_framework import mixins
+from rest_framework.decorators import action
+from rest_framework.response import Response
+from rest_framework.viewsets import GenericViewSet
 
 from .models import Url
+from .serializers import UrlSerializer
+
+
+class UrlApiView(
+    mixins.CreateModelMixin,
+    mixins.RetrieveModelMixin,
+    mixins.UpdateModelMixin,
+    mixins.ListModelMixin,
+    mixins.DestroyModelMixin,
+    GenericViewSet,
+):
+
+    serializer_class = UrlSerializer
+
+    def get_queryset(self):
+        pk = self.kwargs.get("pk")
+        if pk:
+            return Url.objects.filter(pk=pk)
+        return Url.objects.all()
 
 
 def encrypt(full_url):
@@ -27,6 +50,7 @@ def if_exist(request, x=None):
                 cut_url=encrypt(request.POST.get("long_url")),
             )
         finally:
+            x.user.add(request.user)
             return render(
                 request,
                 "base.html",
@@ -38,7 +62,6 @@ def if_exist(request, x=None):
 
 
 def redirect_to(request, pk):
-    print(Url.objects.values_list("cut_url"), pk, end="\n")
     try:
         x = Url.objects.get(cut_url=str(pk)).full_url
     except ObjectDoesNotExist:

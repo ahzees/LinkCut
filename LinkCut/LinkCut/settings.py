@@ -32,6 +32,7 @@ ALLOWED_HOSTS = [
 # Application definitiong
 
 INSTALLED_APPS = [
+    "LinkCut",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -40,8 +41,10 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",
     "cuturl",
+    "authentication",
 ]
 
+AUTH_USER_MODEL = "authentication.CustomUser"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
